@@ -12,14 +12,12 @@ import android.widget.EditText;
 
 public class MainActivity extends Activity implements OnClickListener{
 
-	private EditText edittext;
 	private Button btn_start;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		edittext = (EditText) findViewById(R.id.edittext);
 		btn_start = (Button) findViewById(R.id.start);
 		btn_start.setOnClickListener(this);
 	}
@@ -36,9 +34,7 @@ public class MainActivity extends Activity implements OnClickListener{
 		// TODO Auto-generated method stub
 		switch(v.getId()){
 		case R.id.start:
-			System.out.println("button works");
 			Intent intent = new Intent(MainActivity.this, SurfaceActivity.class);
-			intent.putExtra("time", Integer.parseInt(edittext.getText().toString()));
 			startActivity(intent);
 			break;
 		default:

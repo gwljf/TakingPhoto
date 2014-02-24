@@ -13,7 +13,6 @@
 		    android:layout_alignParentRight="true"
 		    android:layout_alignParentTop="true"
 		    android:layout_weight="1" >
-
 		</FrameLayout>
 
 		<Button
@@ -26,10 +25,11 @@
 
 		<TextView
 		    android:id="@+id/savefile"
-		    android:layout_width="254dp"
+		    android:layout_width="wrap_content"
 		    android:layout_height="wrap_content"
 		    android:layout_alignParentBottom="true"
 		    android:layout_alignParentRight="true"
+		    android:layout_alignRight="@id/stop_takephotos"
 		    android:layout_alignTop="@+id/stop_takephotos"
 		    android:text="这是一个测试"
 		    android:textSize="25sp" />
